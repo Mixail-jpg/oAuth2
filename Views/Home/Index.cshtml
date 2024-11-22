@@ -1,0 +1,11 @@
+﻿@model IEnumerable<dynamic>
+
+<h2>Authorized!!!</h2>
+<p>User data:</p>
+
+@foreach (var claim in Model)
+{
+    <p><strong>@claim.Type</strong>: @claim.Value</p>
+}
+
+<a href="/Account/Logout">Выйти</a>
